@@ -1,0 +1,29 @@
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\CodingStorage\esp32FreeRTOS\hello_world\build\bootloader\esp-idf\esptool_py && C:\Users\Afiq\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:/Users/Afiq/esp/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/CodingStorage/esp32FreeRTOS/hello_world/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/hello_world_main.c.obj
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Linking CXX executable hello_world.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.10.dev2
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/CodingStorage/esp32FreeRTOS/hello_world/build/hello_world.bin
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\CodingStorage\esp32FreeRTOS\hello_world\build\esp-idf\esptool_py && C:\Users\Afiq\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:/Users/Afiq/esp/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/CodingStorage/esp32FreeRTOS/hello_world/build/partition_table/partition-table.bin D:/CodingStorage/esp32FreeRTOS/hello_world/build/hello_world.bin"
+hello_world.bin binary size 0x30180 bytes. Smallest app partition is 0x100000 bytes. 0xcfe80 bytes (81%) free.
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Afiq\esp\v5.5\esp-idf\components\esptool_py && C:\Users\Afiq\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/Afiq/esp/v5.5/esp-idf -D SERIAL_TOOL=C:/Users/Afiq/.espressif/python_env/idf5.5_py3.13_env/Scripts/python.exe;;C:/Users/Afiq/esp/v5.5/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/CodingStorage/esp32FreeRTOS/hello_world/build -P C:/Users/Afiq/esp/v5.5/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM5 -b 115200 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 hello_world.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.dev2
+Serial port COM5
+Connecting......................................
+
+A fatal error occurred: Failed to connect to ESP32: Wrong boot mode detected (0x13)! The chip needs to be in download mode.
+For troubleshooting steps visit: https://docs.espressif.com/projects/esptool/en/latest/troubleshooting.html
+FAILED: CMakeFiles/flash D:/CodingStorage/esp32FreeRTOS/hello_world/build/CMakeFiles/flash 
+C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Afiq\esp\v5.5\esp-idf\components\esptool_py && C:\Users\Afiq\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/Afiq/esp/v5.5/esp-idf -D SERIAL_TOOL=C:/Users/Afiq/.espressif/python_env/idf5.5_py3.13_env/Scripts/python.exe;;C:/Users/Afiq/esp/v5.5/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/CodingStorage/esp32FreeRTOS/hello_world/build -P C:/Users/Afiq/esp/v5.5/esp-idf/components/esptool_py/run_serial_tool.cmake"
+ninja: build stopped: subcommand failed.

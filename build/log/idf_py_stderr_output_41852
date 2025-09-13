@@ -1,0 +1,29 @@
+Command: C:\Users\Afiq\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:\Users\Afiq\esp\v5.5\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\CodingStorage\esp32FreeRTOS\hello_world\build\hello_world.elf D:\CodingStorage\esp32FreeRTOS\hello_world\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Afiq\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe' 'C:\Users\Afiq\esp\v5.5\esp-idf\tools\idf.py' '-p' 'COM5' '-b' '115200'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.7.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x400d51f2: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d55b4: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x400828dd: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4000c050: [0;33mxthal_get_ccount[0m[0m in [0;32mROM[0m
+[0m--- 0x40008544: [0;33mets_delay_us[0m[0m in [0;32mROM[0m
+[0m--- 0x400d32fa: [0;33mapp_main[0m[0m at [0;32mD:/CodingStorage/esp32FreeRTOS/hello_world/main/hello_world_main.c[0m[0m:[1;31m26[0m
+[0m--- 0x400e044d: [0;33mmain_task[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x40085845: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d51f2: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d55b4: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x400828dd: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x40008541: [0;33mets_delay_us[0m[0m in [0;32mROM[0m
+[0m--- 0x400d32fa: [0;33mapp_main[0m[0m at [0;32mD:/CodingStorage/esp32FreeRTOS/hello_world/main/hello_world_main.c[0m[0m:[1;31m26[0m
+[0m--- 0x400e044d: [0;33mmain_task[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x40085845: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d51f2: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d55b4: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x400828dd: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4000c050: [0;33mxthal_get_ccount[0m[0m in [0;32mROM[0m
+[0m--- 0x40008544: [0;33mets_delay_us[0m[0m in [0;32mROM[0m
+[0m--- 0x400d32fa: [0;33mapp_main[0m[0m at [0;32mD:/CodingStorage/esp32FreeRTOS/hello_world/main/hello_world_main.c[0m[0m:[1;31m26[0m
+[0m--- 0x400e044d: [0;33mmain_task[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x40085845: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Users/Afiq/esp/v5.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m

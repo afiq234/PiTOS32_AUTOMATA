@@ -1,0 +1,2 @@
+source D:/CodingStorage/esp32FreeRTOS/hello_world/build/bootloader/gdbinit/symbols
+source D:/CodingStorage/esp32FreeRTOS/hello_world/build/bootloader/gdbinit/connect

@@ -1,0 +1,7 @@
+Command: C:\Users\Afiq\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:\Users\Afiq\esp\v5.5\esp-idf\components/esptool_py/esptool/esptool.py -p COM5 -b 460800 --before default_reset --after hard_reset --chip esp32 erase_flash
+esptool.py v4.10.dev2
+Serial port COM5
+Connecting......................................
+
+A fatal error occurred: Failed to connect to ESP32: Download mode successfully detected, but getting no sync reply: The serial TX path seems to be down.
+For troubleshooting steps visit: https://docs.espressif.com/projects/esptool/en/latest/troubleshooting.html

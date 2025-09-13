@@ -1,0 +1,80 @@
+Command: C:\Users\Afiq\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:\Users\Afiq\esp\v5.5\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\CodingStorage\esp32FreeRTOS\hello_world\build\hello_world.elf D:\CodingStorage\esp32FreeRTOS\hello_world\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Afiq\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe' 'C:\Users\Afiq\esp\v5.5\esp-idf\tools\idf.py' '-p' 'COM5' '-b' '115200'
+13) boot: E������j
+[0;32mI (55) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (61) boot: End of partition table[0m
+[0;32mI (64) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=07da8h ( 32168) map[0m
+[0;32mI (83) esp_image: segment 1: paddr=00017dd0 vaddr=3ffb0000 size=02208h (  8712) loadI (13) boot: ESP-IDF v5.5-468-g02c5f2dbb 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time Sep  6 2025 01:30:30[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (15) boot: chip revision: v1.0[0m
+[0;32mI (17) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (21) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (25) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (28) boot: Enabling RNG early entropy source...[0m
+[0;32mI (33) boot: Partition Table:[0m
+[0;32mI (35) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (42) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (48) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (55) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (61) boot: End of partition table[0m
+[0;32mI (64) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=07da8h ( 32168) map[0m
+[0;32mI (83) esp_image: segment 1: paddr=00017dd0 vaddr=3ffb0000 size=02208h (  8712) load[0m
+[0;32mI (86) esp_image: segment 2: paddr=00019fe0 vaddr=40080000 size=06038h ( 24632) load[0m
+[0;32mI (96) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=10c34h ( 68660) map[0m
+[0;32mI (120) esp_image: segment 4: paddr=00030c5c vaddr=40086038 size=06ad0h ( 27344) load[0m
+[0;32mI (131) esp_image: segment 5: paddr=00037734 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (137) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (138) boot: Disabling RNG early entropy source...[0m
+[0;32mI (149) cpu_start: Multicore app[0m
+[0;32mI (157) cpu_start: Pro cpu start user code[0m
+[0;32mI (157) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (158) app_init: Application information:[0m
+[0;32mI (158) app_init: Project name:     hello_world[0m
+[0;32mI (162) app_init: App version:      1[0m
+[0;32mI (165) app_init: Compile time:     Sep  6 2025 01:30:05[0m
+[0;32mI (170) app_init: ELF file SHA256:  665f544e1...[0m
+[0;32mI (175) app_init: ESP-IDF:          v5.5-468-g02c5f2dbb[0m
+[0;32mI (180) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (183) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (187) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (191) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (198) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (203) heap_init: At 3FFB2A70 len 0002D590 (181 KiB): DRAM[0m
+[0;32mI (208) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (213) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (219) heap_init: At 4008CB08 len 000134F8 (77 KiB): IRAM[0m
+[0;32mI (225) spi_flash: detected chip: generic[0m
+[0;32mI (228) spi_flash: flash io: dio[0m
+[0;33mW (231) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (243) main_task: Started on CPU0[0m
+[0;32mI (253) main_task: Calling app_main()[0m
+[1;31mE (5253) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (5253) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (5253) task_wdt: Tasks currently running:[0m
+[1;31mE (5253) task_wdt: CPU 0: main[0m
+[1;31mE (5253) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (5253) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D51F2:0x3FFB0E80 0x400D55B4:0x3FFB0EA0 0x400828DD:0x3FFB0ED0 0x4000C050:0x3FFB3CF0 0x40008544:0x3FFB3D00 0x400D32FA:0x3FFB3D20 0x400E044D:0x3FFB3D60 0x40085845:0x3FFB3D90
+
+[1;31mE (10253) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (10253) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (10253) task_wdt: Tasks currently running:[0m
+[1;31mE (10253) task_wdt: CPU 0: main[0m
+[1;31mE (10253) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (10253) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D51F2:0x3FFB0E80 0x400D55B4:0x3FFB0EA0 0x400828DD:0x3FFB0ED0 0x40008541:0x3FFB3D00 0x400D32FA:0x3FFB3D20 0x400E044D:0x3FFB3D60 0x40085845:0x3FFB3D90
+
+[1;31mE (15253) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (15253) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (15253) task_wdt: Tasks currently running:[0m
+[1;31mE (15253) task_wdt: CPU 0: main[0m
+[1;31mE (15253) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (15253) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D51F2:0x3FFB0E80 0x400D55B4:0x3FFB0EA0 0x400828DD:0x3FFB0ED0 0x4000C050:0x3FFB3CF0 0x40008544:0x3FFB3D00 0x400D32FA:0x3FFB3D20 0x400E044D:0x3FFB3D60 0x40085845:0x3FFB3D90
+
