@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "hello_world",
-    "project_version":    "1",
+    "project_version":    "a6e912c-dirty",
     "project_path":       "D:/CodingStorage/esp32FreeRTOS/hello_world",
     "idf_path":           "C:/Users/Afiq/esp/v5.5/esp-idf",
     "build_dir":          "D:/CodingStorage/esp32FreeRTOS/hello_world/build",
@@ -460,7 +460,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/CodingStorage/esp32FreeRTOS/hello_world/build/esp-idf/main/libmain.a",
-            "sources": [ "D:/CodingStorage/esp32FreeRTOS/hello_world/main/stepper_motor_encoder.c", "D:/CodingStorage/esp32FreeRTOS/hello_world/main/hello_world_main.c" ],
+            "sources": [ "D:/CodingStorage/esp32FreeRTOS/hello_world/main/stepper_motor_encoder.c", "D:/CodingStorage/esp32FreeRTOS/hello_world/main/main_app.c" ],
             "include_dirs": []
         },
         "mbedtls": {

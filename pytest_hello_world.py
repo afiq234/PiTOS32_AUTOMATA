@@ -18,7 +18,7 @@ from pytest_embedded_qemu.dut import QemuDut
 def test_hello_world(
     dut: IdfDut, log_minimum_free_heap_size: Callable[..., None]
 ) -> None:
-    dut.expect("Hello world!")
+    dut.expect("main_app")
     log_minimum_free_heap_size()
 
 

@@ -1,0 +1,28 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPathWin": "C:\\Users\\Afiq\\esp\\v5.5\\esp-idf",
+  "idf.toolsPathWin": "C:\\Users\\Afiq\\.espressif",
+  "idf.pythonInstallPath": "C:\\Users\\Afiq\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+  "files.associations": {
+    "*.dbclient-js": "javascript",
+    "esp_mac.h": "c",
+    "esp_flash.h": "c",
+    "esp_system.h": "c",
+    "gpio.h": "c",
+    "spi_slave.h": "c",
+    "esp_log.h": "c",
+    "complex": "c",
+    "fstream": "c",
+    "iomanip": "c",
+    "istream": "c",
+    "ostream": "c",
+    "regex": "c",
+    "*.inc": "c",
+    "spi_common.h": "c",
+    "esp_rom_sys.h": "c",
+    "rmt_tx.h": "c",
+    "stepper_motor_encoder.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "disabled",
+  "idf.flashType": "UART"
+}
